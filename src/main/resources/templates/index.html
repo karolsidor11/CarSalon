@@ -1,11 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>Hello in Spring boots</title>
+    <title>Salon samochodowy</title>
+    <link rel="stylesheet" th:href="@{/style.css}"/>
 </head>
-<body>
-<h1> Welcome to my Apps </h1>
+<link>
+<h1> Salon samochodów klasy premium - Zapraszamy !!! </h1><br><br>
+
+<h2>Szanowni Klienci!</h2>
+<h2>
+    Zapraszamy do naszego nowego salonu. Zachęcamy do zapoznania się z najnowszymi modelami
+    klasy premium i zapisania się na jazdę próbną, która z pewnością pozwoli Państwu poznać funkcjonalność
+    i komfort naszych samochodów. Zachęcamy również do skorzystania z konfiguratora 3D,
+    który umożliwia tworzenie kompozycji kolorystycznych i
+    wybranie najlepszej wersji auta dla siebie.
+</h2>
+<a th:href="@{/register}">
+    <button>Założ konto</button>
+</a>
 
 </body>
 </html>
