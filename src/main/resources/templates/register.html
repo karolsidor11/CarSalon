@@ -7,7 +7,7 @@
 </head>
 <body>
 
-<form action="">
+<form action="/userPage" method="post">
     <div class="container">
         <h1>Zarejestruj się </h1>
         <p>Wypełnij ten formularz aby utworzyć konto.</p>
@@ -17,7 +17,6 @@
         <input type="text" placeholder="Nazwisko" name="lastName" required><br>
         <input type="text" placeholder="Email" name="email" required><br>
         <input type="password" placeholder="Hasło" name="password" required><br>
-        <input type="password" placeholder="Powtórz hasło" name="psw-repeat" required>
         <hr>
 
         <p>Tworząc konto akceptujesz nasz regulamin <a th:href="@{/privacy}">Warunki i prywatność</a>.</p>
@@ -25,7 +24,7 @@
     </div>
 
     <div class="container signin">
-        <p>Posiadasz już konto? <a th:href="">Zaloguj się</a>.</p>
+        <p>Posiadasz już konto? <a th:href="@{/privacy}">Zaloguj się</a>.</p>
     </div>
 </form>
 </body>
