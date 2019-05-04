@@ -1,0 +1,25 @@
+h1 {
+    text-align: center;
+}
+
+h2 {
+    font-size: medium;
+    text-align: left;
+    width: 35%;
+    margin-left: 15px;
+}
+
+.container {
+    text-align: center;
+    width: 35%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#privacy {
+    width: 40%;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: justify;
+
+}

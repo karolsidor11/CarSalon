@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Panel rejestracji</title>
+    <link rel="stylesheet" th:href="@{/style.css}"/>
+</head>
+<body>
+
+<form action="/userPage" method="post">
+    <div class="container">
+        <h1>Zarejestruj się </h1>
+        <p>Wypełnij ten formularz aby utworzyć konto.</p>
+        <hr>
+
+        <input type="text" placeholder="Imię" name="name" required><br>
+        <input type="text" placeholder="Nazwisko" name="lastName" required><br>
+        <input type="text" placeholder="Email" name="email" required><br>
+        <input type="password" placeholder="Hasło" name="password" required><br>
+        <hr>
+
+        <p>Tworząc konto akceptujesz nasz regulamin <a th:href="@{/privacy}">Warunki i prywatność</a>.</p>
+        <button type="submit" class="registerbtn">Zarejestruj się</button>
+    </div>
+
+    <div class="container signin">
+        <p>Posiadasz już konto? <a th:href="@{/privacy}">Zaloguj się</a>.</p>
+    </div>
+</form>
+</body>
+</html>
